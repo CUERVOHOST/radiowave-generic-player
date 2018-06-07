@@ -17,14 +17,14 @@ defined('_JEXEC') or die('Restricted access');
 	}
 	else 
 	{
-		$stream = 'http://listen.radionomy.com/abc-jazz';
+		$stream = 'http://aacplus.rstreaming.net:7118/;stream.mp3';
 	}
 
 	//Initiliasation script
 	$init_script = '(function($){' . "\n";
 	$init_script .= '	$(document).ready(function(){' . "\n";
 	$init_script .= '		var stream = {' . "\n";
-	$init_script .= '		  // Replace the stream with your own link' . "\n";
+	$init_script .= '		  //http://aacplus.rstreaming.net:7118/;stream.mp3' . "\n";
 	$init_script .= '			mp3: "'. $stream .'"' . "\n";
 	$init_script .= '		},' . "\n";
 	$init_script .= '		ready = false;' . "\n";
